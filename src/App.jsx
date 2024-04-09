@@ -8,7 +8,7 @@ export default function App() {
 
 
   return (
-    <main className="font-mono p-4 dark:bg-slate-900 min-h-screen max-w-screen-2xl mx-auto">
+    <main className="font-mono p-4 dark:bg-slate-900 min-h-screen max-w-screen-2xl mx-auto container">
         <Header title="Frontend links" body="Små links som kunne være brugbare at have"/>
 
         <section className=''>

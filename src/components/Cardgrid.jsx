@@ -10,7 +10,7 @@ export default function Cardgrid({cards}){
 
 
     return (
-        <section className='flex relative'>
+        <section className='flex relative gap-4'>
 
             {cards.map(card => {
                 return (

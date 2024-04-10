@@ -24,10 +24,14 @@ export default function App() {
 
 
     return (
-        <main className="font-mono p-4 dark:bg-slate-900 min-h-screen max-w-screen-2xl mx-auto container">
-            <Header title="Frontend links" body="Små links som kunne være brugbare at have"/>
+        <main className="font-mono p-4 dark:bg-slate-900 min-h-screen max-w-screen-2xl mx-auto container grid grid-cols-6 gap-4">
 
-            <section className=''>
+            <section className='col-start-2 col-span-4'>
+                <Header title="Frontend links" body="Små links som kunne være brugbare at have"/>
+            </section>
+            
+
+            <section className='row-start-2 row-span-2'>
                 <Form/>
             </section>
         
@@ -35,8 +39,9 @@ export default function App() {
             {/* <section className='flex relative'>
                 <Card title="Title" body="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos eaque fugiat ducimus distinctio!" link="#"/>
             </section> */}
-
-            <Cardgrid cards={data} />
+            <section className='row-start-2 row-span-6 col-span-6 mx-4'>
+                <Cardgrid cards={data} />
+            </section>
         </main>
     )
 }
